@@ -6,15 +6,16 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>
-      Smartshop | {% block title %} {% endblock title %} 
-    </title>
+    <title>Smartshop | {% block title %} {% endblock title %}</title>
     <meta content="" name="ecommerce website" />
     <meta content="ecommerce" name="amazon,selling" />
 
     <!-- Favicons -->
     <link href="{% static '/img/favicon.png' %}" rel="icon" />
-    <link href="{% static '/img/apple-touch-icon.png' %}" rel="apple-touch-icon" />
+    <link
+      href="{% static '/img/apple-touch-icon.png' %}"
+      rel="apple-touch-icon"
+    />
 
     <!-- Google Fonts -->
     <link
@@ -31,13 +32,22 @@
       href="{% static '/vendor/bootstrap-icons/bootstrap-icons.css' %}"
       rel="stylesheet"
     />
-    <link href="{% static '/vendor/boxicons/css/boxicons.min.css" rel="stylesheet' %}" />
+    <link
+      href="{% static '/vendor/boxicons/css/boxicons.min.css"
+      rel="stylesheet' %}"
+    />
     <link
       href="{% static '/vendor/glightbox/css/glightbox.min.css' %}"
       rel="stylesheet"
     />
-    <link href="{% static '/vendor/remixicon/remixicon.css' %}" rel="stylesheet" />
-    <link href="{% static '/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet" />
+    <link
+      href="{% static '/vendor/remixicon/remixicon.css' %}"
+      rel="stylesheet"
+    />
+    <link
+      href="{% static '/vendor/swiper/swiper-bundle.min.css' %}"
+      rel="stylesheet"
+    />
 
     <!-- Template Main CSS File -->
     <link href="{% static '/css/style.css' %}" rel="stylesheet" />
@@ -57,7 +67,13 @@
       <div class="container d-flex align-items-center justify-content-between">
         <!--<h1 class="logo"><a href="/">Smartshop</a></h1>-->
         <!-- Uncomment below if you prefer to use an image logo -->
-        <a href="/" class="logo"><img src="{% static '/img/logo.png' %}" alt="" class="img-fluid">Smartshop</a>
+        <a href="/" class="logo"
+          ><img
+            src="{% static '/img/logo.png' %}"
+            alt=""
+            class="img-fluid"
+          />Smartshop</a
+        >
 
         <nav id="navbar" class="navbar">
           <ul>
@@ -68,17 +84,25 @@
             <li><a class="nav-link scrollto" href="/profile">My Profile</a></li>
 
             <li class="dropdown">
-              <a href="#"><span>SignIn</span> <i class="bi bi-chevron-down"></i
+              <a href="#"
+                ><span>SignIn</span> <i class="bi bi-chevron-down"></i
               ></a>
               <ul>
-                <li><a href="auth/signup">Sign Up</a></li>
-                <li><a href="auth/login">Login</a></li>
-                <li><a href="auth/logout">Logout</a></li>
+                <li><a href="auth/signup/">Sign Up</a></li>
+                <li><a href="auth/login/">Login</a></li>
+                <li><a href="auth/logout/">Logout</a></li>
               </ul>
             </li>
-            <li><a class="nav-link scrollto bg-danger m-2 p-3" href="/cart">Cart</a></li>
-            <li><a class="nav-link scrollto bg-dark m-2 p-3" href="/contact">Contact</a></li>
-
+            <li>
+              <a class="nav-link scrollto bg-danger m-2 p-3" href="/cart"
+                >Cart</a
+              >
+            </li>
+            <li>
+              <a class="nav-link scrollto bg-dark m-2 p-3" href="/contact"
+                >Contact</a
+              >
+            </li>
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>
@@ -90,18 +114,14 @@
     <!-- ======= Hero Section ======= -->
     <section id="hero">
       <div class="hero-container">
-        {% block content %}
-        
+        {% block content %} 
+
         {% endblock content %}
       </div>
     </section>
     <!-- End Hero -->
 
-    <main id="main">
-    {% block body %}
-      
-    {% endblock body %}
-    </main>
+    <main id="main">{% block body %} {% endblock body %}</main>
     <!-- End #main -->
 
     <!-- ======= Footer ======= -->
@@ -190,9 +210,7 @@
             &copy; Copyright <strong><span>Smartshop</span></strong
             >. All Rights Reserved
           </div>
-          <div class="credits">
-                Designed by <a href="#">Brian Nkhata</a>
-          </div>
+          <div class="credits">Designed by <a href="#">Brian Nkhata</a></div>
         </div>
         <div class="social-links text-center text-md-right pt-3 pt-md-0">
           <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
